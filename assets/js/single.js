@@ -1,12 +1,12 @@
 var repoNameEl = document.querySelector("#repo-name");
 var issueContainerEl = document.querySelector("#issues-container");
 var limitWarningEl = document.querySelector("#limit-warning");
+var repoNameEl = document.querySelector("#repo-name");
 
 var getRepoName = function() {
   // grab repo name from url query string
   var queryString = document.location.search;
-  var repoName = queryString.split("=")[1];
-
+  var repoName = queryString.split("=")[1];;
   if (repoName) {
     // display repo name on the page
     repoNameEl.textContent = repoName;
